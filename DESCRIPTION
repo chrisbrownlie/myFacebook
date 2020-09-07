@@ -1,0 +1,21 @@
+Package: myFacebook
+Type: Package
+Title: Simple interface for Facebook data JSON download
+Version: 0.1.0
+Author: Chris Brownlie
+Maintainer: Chris Brownlie <chris.brownlie@hotmail.co.uk>
+Description: The package provides a simple starter for extracting readable versions of data included in Facebook data download. When data has been downloaded from Facebook in JSON format, the package provides an assortment of get_* functions to read the data in to R objects so they can be easily analysed further.
+License: file LICENSE
+Encoding: UTF-8
+Imports:
+  dplyr,
+  rjson,
+  stringr,
+  lubridate,
+  purrr,
+  rvest,
+  xml2,
+  ggplot2
+Suggests:
+LazyData: true
+RoxygenNote: 7.1.1
