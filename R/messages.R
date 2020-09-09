@@ -14,7 +14,7 @@ get_messages <- function(folder = "data",
 
   files <- list.files(file.path(folder, "messages", "inbox"))
 
-  if (!any(grepl(paste0("^", p, "_"), files))) {
+  if (!any(grepl(paste0("^", p, "_"), files, ignore.case = T))) {
     close <- str_extract(files[agrep(p, files)], "^[[:print:]]+?(?=_)")
     stop(paste0("Could not find exact match, did you mean one of the following? If so, enter this as the 'participant' argument:\n-",
                 paste(close, collapse = "\n-")))
